@@ -14,17 +14,21 @@ gem 'lightbox-bootstrap-rails'
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install lightbox-bootstrap-rails
+```bash
+$ gem install lightbox-bootstrap-rails
+```
 
 ## Usage
 
 in assets/javascripts/application.js
 
-```
+``` javascript
 //= ...
 //= require lightbox-bootstrap
 //= ...
@@ -32,7 +36,7 @@ in assets/javascripts/application.js
 
 in assets/stylesheets/application.scss
 
-```
+``` css
 ...
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -42,7 +46,7 @@ in assets/stylesheets/application.scss
 
 Finally, you should add `assets/stylesheets/lightbox_bootstraped.coffee` as follows:
 
-```
+``` coffee
 $(document).delegate '*[data-toggle="lightbox"]', 'click', (event) ->
   event.preventDefault()
   $(this).ekkoLightbox()
@@ -55,8 +59,8 @@ Among the gem sources, a test application is provided and there you can find how
 
 # Changelog
 
--v 3.3.0.0 : initially created.
--v 3.3.0.1 : deployed to Rubygems.org
+  - v 3.3.0.0 : initially created.
+  - v 3.3.0.1 : deployed to Rubygems.org
 
 
 ## Contributing
