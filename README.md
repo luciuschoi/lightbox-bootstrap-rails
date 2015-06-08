@@ -52,6 +52,11 @@ $(document).delegate '*[data-toggle="lightbox"]', 'click', (event) ->
 
 Among the gem sources, a test application is provided and there you can find how to code in the wild.
 
+# Changelog
+
+-v 3.3.0.0 : initially created.
+-v 3.3.0.1 : deployed to Rubygems.org
+
 
 ## Contributing
 
