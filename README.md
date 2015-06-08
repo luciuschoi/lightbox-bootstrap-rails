@@ -1,6 +1,4 @@
-# Lightbox::Bootstrap::Rails
-
-Lightbox for Bootstrap 3
+# Lightbox for Bootstrap 3
 
 This gem was built for the use of 'Lightbox for Bootstrap 3' as Rails assets pipeline and you can look for the detailed documents at http://ashleydw.github.io/lightbox/
 
@@ -41,7 +39,7 @@ in assets/stylesheets/application.scss
 ...
 ```
 
-Finally, you should add `assets/stylesheets/lightbox_bootstrap.coffee` as follows:
+Finally, you should add `assets/stylesheets/lightbox_bootstraped.coffee` as follows:
 
 ```
 $(document).delegate '*[data-toggle="lightbox"]', 'click', (event) ->
@@ -52,7 +50,7 @@ $(document).delegate '*[data-toggle="lightbox"]', 'click', (event) ->
 
 ## Test Application
 
-Among the gem sources, a test application is provided and there you can find how to code in the wild
+Among the gem sources, a test application is provided and there you can find how to code in the wild.
 
 
 ## Contributing
