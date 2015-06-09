@@ -40,8 +40,17 @@ in assets/stylesheets/application.scss
 ...
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "lightbox-bootstrap/rails"
+@import "lightbox-bootstrap"
 ...
+```
+
+or in assets/stylesheets/application.css
+
+``` css
+/*...
+*= require lightbox-bootstrap
+*= require ...
+*/
 ```
 
 Finally, you should add `assets/stylesheets/lightbox_bootstraped.coffee` as follows:
@@ -61,6 +70,7 @@ Among the gem sources, a test application is provided and there you can find how
 
   - v 3.3.0.0 : initially created.
   - v 3.3.0.1 : deployed to Rubygems.org
+  - v 3.3.0.2 : modified @import stylesheet syntax
 
 
 ## Contributing
