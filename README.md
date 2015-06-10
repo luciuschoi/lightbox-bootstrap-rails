@@ -53,7 +53,7 @@ or in assets/stylesheets/application.css
 */
 ```
 
-Finally, you should add `assets/stylesheets/lightbox_bootstraped.coffee` as follows:
+Finally, you should add `assets/javascripts/lightbox_bootstraped.coffee` as follows:
 
 ``` coffee
 $(document).delegate '*[data-toggle="lightbox"]', 'click', (event) ->
