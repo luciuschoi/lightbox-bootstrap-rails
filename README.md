@@ -40,7 +40,7 @@ in assets/stylesheets/application.scss
 ...
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "lightbox-bootstrap"
+@import "lightbox-bootstrap";
 ...
 ```
 
