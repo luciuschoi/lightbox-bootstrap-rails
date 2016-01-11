@@ -71,7 +71,7 @@ Among the gem sources, a test application is provided and there you can find how
   - v 3.3.0.0 : initially created.
   - v 3.3.0.1 : deployed to Rubygems.org
   - v 3.3.0.2 : modified @import stylesheet syntax
-
+  - v 3.3.0.3 : fixed typos in ekko-lightbox.min.js and ekko-lightbox.js
 
 ## Contributing
 
