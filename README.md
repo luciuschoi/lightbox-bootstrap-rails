@@ -1,6 +1,6 @@
-# Lightbox for Bootstrap 3
+# Lightbox for Bootstrap 3 and 4
 
-This gem was built for the use of 'Lightbox for Bootstrap 3' as Rails assets pipeline and you can look for the detailed documents at http://ashleydw.github.io/lightbox/
+This gem was built for the use of 'Lightbox for Bootstrap 3 and 4' as Rails assets pipeline and you can look for the detailed documents at http://ashleydw.github.io/lightbox/
 
 [![Gem Version](https://badge.fury.io/rb/lightbox-bootstrap-rails.svg)](http://badge.fury.io/rb/lightbox-bootstrap-rails)
 
@@ -38,7 +38,6 @@ in assets/stylesheets/application.scss
 
 ``` css
 ...
-@import "bootstrap-sprockets";
 @import "bootstrap";
 @import "lightbox-bootstrap";
 ...
