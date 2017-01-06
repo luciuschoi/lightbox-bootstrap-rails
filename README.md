@@ -9,7 +9,7 @@ This gem was built for the use of 'Lightbox for Bootstrap 3 and 4' as Rails asse
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lightbox-bootstrap-rails'
+gem 'lightbox-bootstrap-rails', '4.alpha5.0'
 ```
 
 And then execute:
