@@ -1,7 +1,7 @@
 module Lightbox
   module Bootstrap
     module Rails
-      VERSION = "4.alpha5.0"
+      VERSION = "5.0.0"
     end
   end
 end

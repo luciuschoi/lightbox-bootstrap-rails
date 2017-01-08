@@ -1,6 +1,6 @@
-# Lightbox for Bootstrap 3 and 4
+# Lightbox for Bootstrap 4
 
-This gem was built for the use of 'Lightbox for Bootstrap 3 and 4' as Rails assets pipeline and you can look for the detailed documents at http://ashleydw.github.io/lightbox/
+This gem was built for the use of 'Lightbox for Bootstrap 4' as Rails assets pipeline and you can look for the detailed documents at http://ashleydw.github.io/lightbox/
 
 [![Gem Version](https://badge.fury.io/rb/lightbox-bootstrap-rails.svg)](http://badge.fury.io/rb/lightbox-bootstrap-rails)
 
@@ -9,7 +9,7 @@ This gem was built for the use of 'Lightbox for Bootstrap 3 and 4' as Rails asse
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lightbox-bootstrap-rails', '4.alpha5.0'
+gem 'lightbox-bootstrap-rails', '5.0.0'
 ```
 
 And then execute:
@@ -70,7 +70,8 @@ Among the gem sources, a test application is provided and there you can find how
   - v 3.3.0.0 : initially created.
   - v 3.3.0.1 : deployed to Rubygems.org
   - v 3.3.0.2 : modified @import stylesheet syntax
-  - v 3.3.0.3 : fixed typos in ekko-lightbox.min.js and ekko-lightbox.js
+  - v 3.3.0.3 : fixed typos in ekko-lightbox.min.js and ekko-lightbox.js ([lightbox v4.0.2](https://github.com/ashleydw/lightbox/tree/v4.0.2) for Boostrap 3).
+  - v 5.0.0.0 : updated with [lightbox v5.0.0](https://github.com/ashleydw/lightbox/tree/v5.0.0) for Boostrap 4.
 
 ## Contributing
 
