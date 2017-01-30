@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Hyo Seong Choi"]
   spec.email         = ["lucius.choi@gmail.com"]
 
-  spec.summary       = %q{A gem built for the use of Lightbox for Bootstrap 3 as the rails assets pipeline.}
-  spec.description   = %q{Wrapping the assets of Lightbox for Bootstrap 3 as a ruby gem.}
+  spec.summary       = %q{A gem built for the use of Lightbox for Bootstrap 4 as the rails assets pipeline.}
+  spec.description   = %q{Wrapping the assets of Lightbox for Bootstrap 4 as a ruby gem.}
   spec.homepage      = "https://github.com/luciuschoi/lightbox-bootstrap-rails"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

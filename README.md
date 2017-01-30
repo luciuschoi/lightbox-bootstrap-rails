@@ -2,6 +2,8 @@
 
 This gem was built for the use of 'Lightbox for Bootstrap 4' as Rails assets pipeline and you can look for the detailed documents at http://ashleydw.github.io/lightbox/
 
+Updated using Bootstrap 4 alpha 6 version
+
 [![Gem Version](https://badge.fury.io/rb/lightbox-bootstrap-rails.svg)](http://badge.fury.io/rb/lightbox-bootstrap-rails)
 
 ## Installation
@@ -9,7 +11,7 @@ This gem was built for the use of 'Lightbox for Bootstrap 4' as Rails assets pip
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lightbox-bootstrap-rails', '5.0.0'
+gem 'lightbox-bootstrap-rails', '5.1.0.0'
 ```
 
 And then execute:
