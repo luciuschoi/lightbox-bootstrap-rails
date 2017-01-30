@@ -92,7 +92,7 @@ var Lightbox = (function ($) {
 
 			var header = '<div class="modal-header"' + (this._config.title || this._config.alwaysShowClose ? '' : ' style="display:none"') + '><button type="button" class="close" data-dismiss="modal" aria-label="' + this._config.strings.close + '"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">' + (this._config.title || "&nbsp;") + '</h4></div>';
 			var footer = '<div class="modal-footer"' + (this._config.footer ? '' : ' style="display:none"') + '>' + (this._config.footer || "&nbsp;") + '</div>';
-			var body = '<div class="modal-body"><div class="ekko-lightbox-container"><div class="ekko-lightbox-item fade in"></div><div class="ekko-lightbox-item fade"></div></div></div>';
+			var body = '<div class="modal-body"><div class="ekko-lightbox-container"><div class="ekko-lightbox-item fade in show"></div><div class="ekko-lightbox-item fade"></div></div></div>';
 			var dialog = '<div class="modal-dialog" role="document"><div class="modal-content">' + header + body + footer + '</div></div>';
 			$(this._config.doc.body).append('<div id="' + this._modalId + '" class="ekko-lightbox modal fade" tabindex="-1" tabindex="-1" role="dialog" aria-hidden="true">' + dialog + '</div>');
 
@@ -244,13 +244,13 @@ var Lightbox = (function ($) {
 					$current = this._$lightboxBodyTwo;
 				}
 
-				$current.removeClass('in');
+				$current.removeClass('in show');
 				setTimeout(function () {
 					if (!_this2._$lightboxBodyTwo.hasClass('in')) _this2._$lightboxBodyTwo.empty();
 					if (!_this2._$lightboxBodyOne.hasClass('in')) _this2._$lightboxBodyOne.empty();
 				}, 500);
 
-				$toUse.addClass('in');
+				$toUse.addClass('in show');
 				return $toUse;
 			}
 		}, {
@@ -315,11 +315,11 @@ var Lightbox = (function ($) {
 				show = show || false;
 				if (show) {
 					this._$modalDialog.css('display', 'none');
-					this._$modal.removeClass('in');
+					this._$modal.removeClass('in show');
 					$('.modal-backdrop').append(this._config.loadingMessage);
 				} else {
 					this._$modalDialog.css('display', 'block');
-					this._$modal.addClass('in');
+					this._$modal.addClass('in show');
 					$('.modal-backdrop').find('.ekko-lightbox-loader').remove();
 				}
 				return this;
@@ -510,6 +510,10 @@ var Lightbox = (function ($) {
 							var image = $('<img />');
 							image.attr('src', img.src);
 							image.addClass('img-fluid');
+
+							// backward compatibility for bootstrap v3
+							image.css('width', '100%');
+
 							$containerForImage.html(image);
 							if (_this4._$modalArrows) _this4._$modalArrows.css('display', ''); // remove display to default to css property
 
@@ -567,7 +571,12 @@ var Lightbox = (function ($) {
 				this._$lightboxContainer.css('height', maxHeight);
 				this._$modalDialog.css('width', 'auto').css('maxWidth', width);
 
-				this._$modal.modal('_handleUpdate');
+				try {
+					// v4 method is mistakenly protected
+					this._$modal.data('bs.modal')._handleUpdate();
+				} catch (e) {
+					this._$modal.data('bs.modal').handleUpdate();
+				}
 				return this;
 			}
 		}], [{
