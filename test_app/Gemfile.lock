@@ -1,5 +1,6 @@
-PATH
-  remote: ../
+GIT
+  remote: https://github.com/luciuschoi/lightbox-bootstrap-rails.git
+  revision: f73bf06e20e12ae47b5d85532ca84ff734c9a621
   specs:
     lightbox-bootstrap-rails (5.1.0.0)
 
