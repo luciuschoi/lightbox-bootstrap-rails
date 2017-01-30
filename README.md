@@ -11,7 +11,7 @@ Updated using Bootstrap 4 alpha 6 version
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'lightbox-bootstrap-rails', '5.1.0.0'
+gem 'lightbox-bootstrap-rails', '5.1.0.1'
 ```
 
 And then execute:
@@ -75,6 +75,7 @@ Among the gem sources, a test application is provided and there you can find how
   - v 3.3.0.3 : fixed typos in ekko-lightbox.min.js and ekko-lightbox.js ([lightbox v4.0.2](https://github.com/ashleydw/lightbox/tree/v4.0.2) for Boostrap 3).
   - v 5.0.0.0 : updated with [lightbox v5.0.0](https://github.com/ashleydw/lightbox/tree/v5.0.0) for Boostrap 4 alpha 5
   - v 5.1.0.0 : updated with [lightbox v5.1.0](https://github.com/ashleydw/lightbox/tree/v5.1.0) for Boostrap 4 alpha 6
+  - v 5.1.0.1 : fixed modal dialog alignments
 
 ## Contributing
 
